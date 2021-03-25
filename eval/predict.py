@@ -29,7 +29,9 @@ target_vocab_size = tokenizer_en.vocab_size + 2
 transformer = Transformer(num_layers, input_vocab_size, target_vocab_size,
                           MAX_LENGTH, d_model, num_heads, dff, dropout_rate)
 
-checkpoint_path = os.path.join(checkpoint_dir, "train")
+
+checkpoint_path = os.path.join(predict_checkpoint_dir, "train")
+print("checkpoint_path: ", checkpoint_path)
 
 ckpt = tf.train.Checkpoint(transformer=transformer)
 ckpt.restore(tf.train.latest_checkpoint(checkpoint_path))

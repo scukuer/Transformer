@@ -13,4 +13,4 @@ dropout_rate = 0.1
 epochs = 5
 
 checkpoint_dir = "./checkpoints"
-# checkpoint_path = "./checkpoints/train"
+predict_checkpoint_dir = "../train/checkpoints"
