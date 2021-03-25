@@ -114,7 +114,7 @@ for epoch in range(epochs):
 
 from eval.predict import translate
 
-translate('está muito frio aqui.')
+translate('está muito frio aqui')
 translate('isto é minha vida')
 translate('você ainda está em casa?')
 translate('este é o primeiro livro que eu já li')
