@@ -104,9 +104,9 @@ for epoch in range(epochs):
                                                                          train_accuracy.result()))
             # checkpoint.save(file_prefix=checkpoint_prefix)   # 和上面注释的代码对应
 
-        if (epoch + 1) % 5 == 0:
-            ckpt_save_path = ckpt_manager.save()
-            print('Saving checkpoint for epoch {} at {}'.format(epoch + 1, ckpt_save_path))
+    if (epoch + 1) % 5 == 0:
+        ckpt_save_path = ckpt_manager.save()
+        print('Saving checkpoint for epoch {} at {}'.format(epoch + 1, ckpt_save_path))
 
     print('Epoch {} Loss {:.4f} Accuracy {:.4f}'.format(epoch + 1, train_loss.result(), train_accuracy.result()))
     print('Time take for 1 epoch: {} secs\n'.format(time.time() - start))
