@@ -1,0 +1,8 @@
+scala/.idea/*
+scala/target/*
+metric/*
+train/checkpoints/
+layers/__pycache__/
+models/__pycache__/
+utils/__pycache__/
+.idea/
